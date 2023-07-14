@@ -56,7 +56,6 @@ def register(request):
     username=request.POST['username']
     password=request.POST['password']
     cpassword=request.POST['password1']
-    mobilenumber=request.POST['number']
     email=request.POST['email']
     if password==cpassword:
       user=User.objects.create_user(username,email,password)
